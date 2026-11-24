@@ -1,0 +1,28 @@
+.welcome-card {
+  max-width: 760px;
+  padding: 30px;
+  border: 1px solid #e2eaf0;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgb(22 46 68 / 5%);
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #168a79;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0 0 12px;
+  color: #18334b;
+}
+
+.welcome-card > p:last-child {
+  margin: 0;
+  color: #5b6d7c;
+  line-height: 1.6;
+}

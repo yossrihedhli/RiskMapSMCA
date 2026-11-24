@@ -1,0 +1,30 @@
+<div class="app-shell">
+  <aside class="sidebar" aria-label="Navigation principale">
+    <a class="brand" routerLink="/">RiskMap <span>SMCA</span></a>
+    <nav>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        Tableau de bord
+      </a>
+    </nav>
+  </aside>
+
+  <div class="main-area">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Continuité d'activité</p>
+        <h1>Gestion des risques</h1>
+      </div>
+      <div class="account">
+        <div class="account-details">
+          <strong>{{ authService.currentUser()?.fullName }}</strong>
+          <span>{{ authService.currentUser()?.role }}</span>
+        </div>
+        <button type="button" class="logout-button" (click)="logout()">Déconnexion</button>
+      </div>
+    </header>
+
+    <main class="content">
+      <router-outlet />
+    </main>
+  </div>
+</div>
